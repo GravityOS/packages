@@ -5,7 +5,7 @@ pkgver=5.16.0.gravity1
 pkgrel=1
 pkgdesc='Linux'
 _srctag=v${pkgver%.*}-${pkgver##*.}
-url="https://github.com/GravityOS/linux.git"
+url="git+https://github.com/GravityOS/linux.git"
 arch=(x86_64)
 license=(GPL2)
 makedepends=(
@@ -14,9 +14,9 @@ makedepends=(
   git
 )
 options=('!strip')
-_srcname=gravityos-linux
+_srcname=linux
 source=(
-  "https://github.com/GravityOS/linux.git"
+  "git+https://github.com/GravityOS/linux.git"
   config         # the main kernel config file
 )
 validpgpkeys=(
@@ -26,8 +26,7 @@ validpgpkeys=(
   '6134A9959006589A8CFEEF56EED233CC06D12504'  # Ethan Lane (Vylpes)
 )
 sha256sums=('SKIP'
-            'e8e9d05bc4076915c0b8f4d1d7d8889b6c446a9853a5d5ef09df47689164403b'
-            '8cb21e0b3411327b627a9dd15b8eb773295a0d2782b1a41b2a8839d1b2f5778c')
+            '76463b21e47bd6436c1f4df32c116f439cb98e5aeaadd1d8f9d98f8b071e9f46')
 
 export KBUILD_BUILD_HOST=gravityos
 export KBUILD_BUILD_USER=$pkgbase
