@@ -1,7 +1,7 @@
 # Maintainer: Ethan Lane (Vylpes) <ethan@vylpes.com>
 
-pkgbase=linux
-pkgver=5.16.0.gravity3
+pkgbase=linux-gos
+pkgver=5.16.0.gravity4
 pkgrel=1
 pkgdesc='Linux'
 _srctag=v${pkgver%.*}-${pkgver##*.}
@@ -14,7 +14,7 @@ makedepends=(
   git
 )
 options=('!strip')
-_srcname=linux
+_srcname=build
 source=(
   "git+https://github.com/GravityOS/linux.git"
   config         # the main kernel config file
