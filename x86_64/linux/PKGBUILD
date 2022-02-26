@@ -14,7 +14,7 @@ makedepends=(
   git
 )
 options=('!strip')
-_srcname=build
+_srcname=linux
 source=(
   "git+https://github.com/GravityOS/linux.git"
   config         # the main kernel config file
